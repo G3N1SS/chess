@@ -8,11 +8,9 @@ import ErrorContext from './contexts/ErrorContext'
 import SendContext from './contexts/SendContext'
 
 function App() {
-	const [loggedIn, setLoggedIn] = useState(false)
 	const [currentUser, setCurrentUser] = useState({})
 	const [isSend, setIsSend] = useState(false)
 	const [isError, setIsError] = useState(false)
-	//Привет !!!
 
 	return (
 		<>
@@ -20,10 +18,7 @@ function App() {
 				<SendContext.Provider value={isSend}>
 					<ErrorContext.Provider value={isError}>
 						<Routes>
-							<Route
-								path='/'
-								element={<MainPage loggedIn={loggedIn} />}
-							></Route>
+							<Route path='/' element={<MainPage />}></Route>
 							<Route
 								path='/sign-in'
 								element={<Login name={'sign-in'} setIsError={setIsError} />}
