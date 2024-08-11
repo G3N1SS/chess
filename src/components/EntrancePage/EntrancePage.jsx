@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router';
+import './entrance.css'
 
 export default function EntrancePage({children, name, setIsError}){
   const { pathname } = useLocation();
