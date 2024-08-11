@@ -29,7 +29,6 @@ function App() {
         </ErrorContext.Provider>
       </SendContext.Provider>
     </CurrentUserContext.Provider>
-
 		</>
 	)
 }

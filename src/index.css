@@ -2,6 +2,21 @@
 @import url(./vendor/fonts.css);
 @import url(./vendor/animations.css);
 
+.container{
+	max-width: 1140px;
+	display: flex;
+	justify-content: center;
+}
+
+.page{
+    background-color: rgb(31, 31, 31);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .figure {
 	width: 80px;
 	height: 80px;
