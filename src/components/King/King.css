@@ -1,0 +1,6 @@
+.king {
+	background: url('../../img/Chess_klt60.png') center center/cover no-repeat;
+}
+.king_black {
+	background: url('../../img/Chess_kdt60.png') center center/cover no-repeat;
+}

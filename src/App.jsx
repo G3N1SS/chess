@@ -1,12 +1,9 @@
-import { useState } from 'react'
+import ChessBoard from './components/ChessBoard/ChessBoard'
 
 function App() {
-	const [count, setCount] = useState(0)
-	//Привет !!!
-
 	return (
 		<>
-			<h1>Hello</h1>
+			<ChessBoard />
 		</>
 	)
 }
