@@ -1,0 +1,6 @@
+.knight {
+	background: url('../../img/Chess_nlt60.png') center center/contain no-repeat;
+}
+.knight_black {
+	background: url('../../img/Chess_ndt60.png') center center/contain no-repeat;
+}

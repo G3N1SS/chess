@@ -1,0 +1,210 @@
+.figure {
+	width: 80px;
+	height: 80px;
+}
+/* Секция A */
+.figure_a1 {
+	grid-area: a1;
+}
+.figure_a2 {
+	grid-area: a2;
+}
+.figure_a3 {
+	grid-area: a3;
+}
+.figure_a4 {
+	grid-area: a4;
+}
+.figure_a5 {
+	grid-area: a5;
+}
+.figure_a6 {
+	grid-area: a6;
+}
+.figure_a7 {
+	grid-area: a7;
+}
+.figure_a8 {
+	grid-area: a8;
+}
+
+/* Секция B */
+.figure_b1 {
+	grid-area: b1;
+}
+.figure_b2 {
+	grid-area: b2;
+}
+.figure_b3 {
+	grid-area: b3;
+}
+.figure_b4 {
+	grid-area: b4;
+}
+.figure_b5 {
+	grid-area: b5;
+}
+.figure_b6 {
+	grid-area: b6;
+}
+.figure_b7 {
+	grid-area: b7;
+}
+.figure_b8 {
+	grid-area: b8;
+}
+/* Секция C */
+.figure_c1 {
+	grid-area: c1;
+}
+.figure_c2 {
+	grid-area: c2;
+}
+.figure_c3 {
+	grid-area: c3;
+}
+.figure_c4 {
+	grid-area: c4;
+}
+.figure_c5 {
+	grid-area: c5;
+}
+.figure_c6 {
+	grid-area: ca6;
+}
+.figure_c7 {
+	grid-area: c7;
+}
+.figure_c8 {
+	grid-area: c8;
+}
+
+/* Секция D */
+.figure_d1 {
+	grid-area: d1;
+}
+.figure_d2 {
+	grid-area: d2;
+}
+.figure_d3 {
+	grid-area: d3;
+}
+.figure_d4 {
+	grid-area: d4;
+}
+.figure_d5 {
+	grid-area: d5;
+}
+.figure_d6 {
+	grid-area: d6;
+}
+.figure_d7 {
+	grid-area: d7;
+}
+.figure_d8 {
+	grid-area: d8;
+}
+
+/* Секция E */
+.figure_e1 {
+	grid-area: e1;
+}
+.figure_e2 {
+	grid-area: e2;
+}
+.figure_e3 {
+	grid-area: e3;
+}
+.figure_e4 {
+	grid-area: e4;
+}
+.figure_e5 {
+	grid-area: e5;
+}
+.figure_e6 {
+	grid-area: e6;
+}
+.figure_e7 {
+	grid-area: e7;
+}
+.figure_e8 {
+	grid-area: e8;
+}
+
+/* Секция G */
+.figure_f1 {
+	grid-area: f1;
+}
+.figure_f2 {
+	grid-area: f2;
+}
+.figure_f3 {
+	grid-area: f3;
+}
+.figure_f4 {
+	grid-area: f4;
+}
+.figure_f5 {
+	grid-area: f5;
+}
+.figure_f6 {
+	grid-area: f6;
+}
+.figure_f7 {
+	grid-area: f7;
+}
+.figure_f8 {
+	grid-area: f8;
+}
+
+/* Секция G */
+.figure_g1 {
+	grid-area: g1;
+}
+.figure_g2 {
+	grid-area: g2;
+}
+.figure_g3 {
+	grid-area: g3;
+}
+.figure_g4 {
+	grid-area: g4;
+}
+.figure_g5 {
+	grid-area: g5;
+}
+.figure_g6 {
+	grid-area: g6;
+}
+.figure_g7 {
+	grid-area: g7;
+}
+.figure_g8 {
+	grid-area: g8;
+}
+
+/* Секция H */
+.figure_h1 {
+	grid-area: h1;
+}
+.figure_h2 {
+	grid-area: h2;
+}
+.figure_h3 {
+	grid-area: h3;
+}
+.figure_h4 {
+	grid-area: h4;
+}
+.figure_h5 {
+	grid-area: h5;
+}
+.figure_h6 {
+	grid-area: h6;
+}
+.figure_h7 {
+	grid-area: h7;
+}
+.figure_h8 {
+	grid-area: h8;
+}

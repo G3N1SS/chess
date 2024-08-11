@@ -1,0 +1,6 @@
+.bishop {
+	background: url('../../img/Chess_blt60.png') center center/contain no-repeat;
+}
+.bishop_black {
+	background: url('../../img/Chess_bdt60.png') center center/contain no-repeat;
+}
