@@ -1,0 +1,6 @@
+.rook {
+	background: url('../../img/Chess_rlt60.png') center center/contain no-repeat;
+}
+.rook_black {
+	background: url('../../img/Chess_rdt60.png') center center/contain no-repeat;
+}
