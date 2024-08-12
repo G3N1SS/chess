@@ -1,0 +1,38 @@
+.game__title{
+    color: white;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.container_game{
+    gap: 60px;
+}
+
+.game__buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 610px;
+}
+
+.game__button{
+    background: #3eb489;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: 'Inter';
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
+    transition: all .3s;
+}
+
+.game__button:hover{
+    transform: scale(1.03);
+}
+
+.game__button:active{
+    transform: scale(0.97);
+    background-color: white;
+    color: black;
+}

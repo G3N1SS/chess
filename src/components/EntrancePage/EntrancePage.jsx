@@ -9,14 +9,12 @@ import { useEffect, useState } from 'react';
 
 export default function EntrancePage({children, name, setIsError, onSubmit, isValid}){
   const { pathname } = useLocation();
-  const [isRegister, setIsRegister] = useState(false);
-  console.log(isRegister)
   return(
     <>
       <section className="entrance">
         {/* логотип*/}
-        <div className={`container container_entrance ${isRegister === true && 'container_reversed'}`}>
-          <div className={`entrance__left-wrapper ${isRegister === true  && 'entrance__left-wrapper_reversed'}`}>
+        <div className={`container container_entrance ${pathname === '/sign-up' && 'container_reversed'}`}>
+          <div className={`entrance__left-wrapper ${pathname === '/sign-up' === true  && 'entrance__left-wrapper_reversed'}`}>
             <div className="entrance__header enter"> 
               <div className="enter__logo logo">
                 <img src={logo} alt="" className="logo__image" />
@@ -60,7 +58,7 @@ export default function EntrancePage({children, name, setIsError, onSubmit, isVa
                 }
             </div>
           </div>
-          <img src={pig} alt="" className={`entrance__pic ${isRegister === true && 'entrance__pic_reversed'}`} />
+          <img src={pig} alt="" className={`entrance__pic ${pathname === '/sign-up' && 'entrance__pic_reversed'}`} />
         </div>
       </section>
     </>

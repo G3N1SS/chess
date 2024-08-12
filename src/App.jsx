@@ -7,6 +7,7 @@ import Registration from './components/Registration/Registration'
 import CurrentUserContext from './contexts/CurrentUserContext'
 import ErrorContext from './contexts/ErrorContext'
 import SendContext from './contexts/SendContext'
+import ChessBoard from './components/ChessBoard/ChessBoard'
 
 function App() {
 	const [currentUser, setCurrentUser] = useState({})
@@ -34,7 +35,7 @@ function App() {
 									<Registration name={'sign-up'} setIsError={setIsError} />
 								}
 							></Route>
-							<Route path='/chess'></Route>
+							<Route path='/chess' element={<ChessBoard/>}></Route>
 							<Route path='/profile' element={<Profile />}></Route>
 						</Routes>
 					</ErrorContext.Provider>
