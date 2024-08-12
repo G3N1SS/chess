@@ -1,6 +1,7 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import PropTypes from 'prop-types';
+import GameSection from "../GameSection/GameSection";
 
 
 export default function MainPage({loggedIn}){
@@ -8,6 +9,7 @@ export default function MainPage({loggedIn}){
   return(
     <>
       <Header loggedIn={loggedIn}/>
+      <GameSection/>
       <Footer/>
     </>
   )

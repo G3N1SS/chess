@@ -5,16 +5,19 @@
   font-family: 'Inter';
   justify-content: space-between;
   margin: auto 0;
+  position: relative;
 }
 
 .container_entrance{
     display: flex;
     justify-content: space-between;
     transition: all .5s;
+    animation: unreverse .7s ease-in-out forwards;
 }
 
 .container_reversed{
     transition: all .3s;
+    animation: reverse ease-in-out forwards .7s
 }
 
 .entrance__main{
@@ -47,17 +50,18 @@
 }
 
 .entrance__left-wrapper{
+    position: relative;
+    z-index: 10;
     width: 51%;
     padding: 25px;
     background-color: white;
-    border-radius:  60px 0 0 60px ;
     transition: all .5s;
+    animation: sign-in ease-in-out forwards .8s;
 }
 
 .entrance__left-wrapper_reversed{
-    border-radius: 0 60px 60px 0;
     transition: all .5s;
-    transform: translateX(100%);
+    animation: sign-up ease-in-out forwards .8s;
 }
 
 .enter{
@@ -68,15 +72,20 @@
 }
 
 .entrance__pic{
+    position: relative;
     max-width: 49%;
-    border-radius: 0 60px 60px 0;
     object-fit: contain;
     filter: invert(0.88);
     transition: all .5s;
+    height: 100%;
+    display: flex;
+    padding: 25% 0;
+    background-color: white;
+    animation: sign-inpic ease-in-out forwards .8s;
 }
 
 .entrance__pic_reversed{
-    transform: translateX(-100%);
+    animation: sign-uppic ease-in-out forwards .8s;
 }
 
 .entrance__choose{
@@ -132,6 +141,13 @@
     display: inline-block;
     width: 115px;
     height: 50px;
+}
+
+.select__option{
+    width: 20px;
+    height: 20px;
+    font-size: 100px;
+    background-image: url(../../img/iconsuk.png);
 }
 
 .login__caption{
