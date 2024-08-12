@@ -1,6 +1,7 @@
 import { useLocation } from "react-router"
 import SendContext from "../../contexts/SendContext"
 import { useContext } from "react"
+import './input.css'
 
 export default function Input({name, type, disabled, placeholder, isInputValid, value, error, pattern}){
   const isSend = useContext(SendContext)
@@ -13,7 +14,7 @@ export default function Input({name, type, disabled, placeholder, isInputValid, 
         <p className="login__input-name">{name === 'email' ? 'E-Mail' : name === 'password' ? 'Пароль' : 'Имя'}</p>
         <input
           type={type}
-          className={`login__input-name ${isInputValid === undefined || isInputValid && 'login__input_invalid'}`}
+          className={`login__input ${isInputValid === undefined || isInputValid && 'login__input_invalid'}`}
           required
           maxLength={30}
           minLength={2}
@@ -32,7 +33,7 @@ export default function Input({name, type, disabled, placeholder, isInputValid, 
         <p className="login__input-name">{name === 'email' ? 'E-Mail' : name === 'password' ? 'Пароль' : 'Имя'}</p>
         <input
           type={type}
-          className={`login__input-name ${isInputValid === undefined || isInputValid && 'login__input_invalid'}`}
+          className={`login__input ${isInputValid === undefined || isInputValid && 'login__input_invalid'}`}
           required
           maxLength={30}
           minLength={2}
@@ -50,7 +51,7 @@ export default function Input({name, type, disabled, placeholder, isInputValid, 
       <>
         <input
           type={type}
-          className={`login__input-name ${isInputValid === undefined || isInputValid && 'profile__input_invalid'}`}
+          className={`login__input ${isInputValid === undefined || isInputValid && 'profile__input_invalid'}`}
           required
           maxLength={30}
           minLength={2}

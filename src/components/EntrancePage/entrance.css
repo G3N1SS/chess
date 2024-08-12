@@ -10,24 +10,54 @@
 .container_entrance{
     display: flex;
     justify-content: space-between;
+    transition: all .5s;
+}
+
+.container_reversed{
+    transition: all .3s;
 }
 
 .entrance__main{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entrance__title{
+    text-transform: uppercase;
+	font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.entrance__header{
+    margin-bottom: 60px;
+}
+
+.entrance__caption{
+  font-size: 20px;
+  margin: 0 0 80px;
 }
 
 .enter__logo{
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
 }
 
 .entrance__left-wrapper{
     width: 51%;
-    padding: 50px;
+    padding: 25px;
     background-color: white;
     border-radius:  60px 0 0 60px ;
+    transition: all .5s;
+}
+
+.entrance__left-wrapper_reversed{
+    border-radius: 0 60px 60px 0;
+    transition: all .5s;
+    transform: translateX(100%);
 }
 
 .enter{
@@ -40,7 +70,53 @@
 .entrance__pic{
     max-width: 49%;
     border-radius: 0 60px 60px 0;
+    object-fit: contain;
     filter: invert(0.88);
+    transition: all .5s;
+}
+
+.entrance__pic_reversed{
+    transform: translateX(-100%);
+}
+
+.entrance__choose{
+    font-size: 12px;
+    display: block;
+    position: relative;
+    color: #AFA8A8;
+    margin-bottom: 40px;
+}
+
+.entrance__choose::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 200%;
+    top: 50%;
+    height: 1px;
+    width: 60px;
+    background-color: #AFA8A8
+}
+
+.entrance__choose::before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 200%;
+    top: 50%;
+    height: 1px;
+    width: 60px;
+    background-color: #AFA8A8
+}
+
+.entrance__google{
+    border: 1px solid #d2d2d2;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 16px 100px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .logo__image{
@@ -56,4 +132,30 @@
     display: inline-block;
     width: 115px;
     height: 50px;
+}
+
+.login__caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.login__caption-text{
+    color: #8B8B8B;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 665px) {
+    .login__caption-text {
+        font-size: 12px;
+    }
+}
+
+.login__link{
+    color: #4285F4;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
 }
