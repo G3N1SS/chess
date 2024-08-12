@@ -1,9 +1,13 @@
+button:hover {
+	cursor: pointer;
+}
+
 .header {
 	width: 100%;
 	background: #1c1c1c;
 	color: white;
 	font-size: 18px;
-	font-family: "Inter"; 
+	font-family: 'Inter';
 }
 
 .header__wrapper-left {
@@ -25,16 +29,33 @@
 	color: white;
 	border: none;
 	margin-right: 10px;
+	transition: 0.3s all ease-in-out;
+}
+.account__btn:hover {
+	transform: translateY(-3px);
+	color: #3eb489;
+}
+.account__btn:active {
+	transform: translateY(1px);
 }
 .account__btn-img {
 	width: 35px;
 	height: 35px;
-
 }
+
 .header__settings {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: 0.3s all ease-in-out;
+}
+.header__settings:hover {
+	transform: translateY(-3px);
+	color: #3eb489;
+}
+.header__settings:active {
+	transform: translateY(1px);
+	color: rgb(191, 191, 191);
 }
 
 .header__logo {
@@ -47,11 +68,23 @@
 	margin-right: 5px;
 }
 .header__link-settings {
-	color:white;
+	color: white;
 	text-decoration: none;
+	transition: 0.3s all ease-in-out;
+}
+.header__link-settings:hover {
+	color: #3eb489;
 }
 .header__title {
 	margin-right: 10px;
+}
+.header__title a {
+	color: white;
+	text-decoration: none;
+	transition: 0.2s all ease-in-out;
+}
+.header__title a:hover {
+	color: #3eb489;
 }
 .header__create-game {
 	background: #1c1c1c;

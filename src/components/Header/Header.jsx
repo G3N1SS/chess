@@ -11,7 +11,9 @@ export default function Header() {
 			<div className='container container_header'>
 				<div className='header__wrapper-left'>
 					<img src={logo} alt='' className='header__logo' />
-					<h1 className='header__title'>Pig chess</h1>
+					<h1 className='header__title'>
+						<a href="#">Pig chess</a>
+					</h1>
 				</div>
 				<div className='header__wrapper-right'>
 					<button className='account__btn'>

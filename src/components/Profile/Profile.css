@@ -1,0 +1,8 @@
+.profile {
+	font-size: 16px;
+	color: white;
+	font-family: 'Inter';
+}
+.profile__container {
+	display: grid;
+}
