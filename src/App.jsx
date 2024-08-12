@@ -14,26 +14,18 @@ function App() {
 
 	return (
 		<>
-			<CurrentUserContext.Provider value={currentUser}>
-				<SendContext.Provider value={isSend}>
-					<ErrorContext.Provider value={isError}>
-						<Routes>
-							<Route path='/' element={<MainPage />}></Route>
-							<Route
-								path='/sign-in'
-								element={<Login name={'sign-in'} setIsError={setIsError} />}
-							></Route>
-							<Route
-								path='/sign-up'
-								element={
-									<Registration name={'sign-up'} setIsError={setIsError} />
-								}
-							></Route>
-							<Route path='/chess'></Route>
-						</Routes>
-					</ErrorContext.Provider>
-				</SendContext.Provider>
-			</CurrentUserContext.Provider>
+    <CurrentUserContext.Provider value={currentUser}>
+      <SendContext.Provider value={isSend}>
+        <ErrorContext.Provider value={isError}>
+          <Routes>
+            <Route path='/' element={<MainPage loggedIn={loggedIn}/>}></Route>
+            <Route path='/sign-in' element={<Login name={'sign-in'} setIsError={setIsError}/>}></Route>
+            <Route path='/sign-up' element={<Registration name={'sign-up'} setIsError={setIsError}/>}></Route>
+            <Route path='/chess'></Route>
+          </Routes>
+        </ErrorContext.Provider>
+      </SendContext.Provider>
+    </CurrentUserContext.Provider>
 		</>
 	)
 }

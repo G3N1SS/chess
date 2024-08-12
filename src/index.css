@@ -2,20 +2,19 @@
 @import url(./vendor/fonts.css);
 @import url(./vendor/animations.css);
 
-.page {
-	background-color: rgb(31, 31, 31);
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-.container {
+.container{
 	max-width: 1140px;
-	margin: 0 auto;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center;
+}
+
+.page{
+    background-color: rgb(31, 31, 31);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .figure {
