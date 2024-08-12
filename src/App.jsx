@@ -9,6 +9,7 @@ import SendContext from './contexts/SendContext'
 
 function App() {
 	const [currentUser, setCurrentUser] = useState({})
+  const [loggedIn, setLoggedIn] = useState(false)
 	const [isSend, setIsSend] = useState(false)
 	const [isError, setIsError] = useState(false)
 
