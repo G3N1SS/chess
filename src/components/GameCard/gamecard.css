@@ -1,55 +1,55 @@
-.card{
-  max-width: 220px;
-  color: white;
-  font-family: 'Inter';
+.card {
+	max-width: 220px;
+	color: white;
+	font-family: 'Inter';
 }
 
-.game{
-    text-align: center;
+.game {
+	text-align: center;
 }
 
-.card__img{
-    max-width: 220px;
-    cursor: pointer;
+.card__img {
+	max-width: 220px;
+	cursor: pointer;
 }
 
-.banner__player{
-    margin: 0;
+.banner__player {
+	margin: 0;
 }
-.banner__rating{
-    margin: 0;
-}
-
-.banner{
-    display: flex;
-    justify-content: space-between;
+.banner__rating {
+	margin: 0;
 }
 
-.banner__time{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
-.banner__time-count{
-    margin: 0;
+.banner {
+	display: flex;
+	justify-content: space-between;
 }
 
-.banner__player{
-    font-weight: 600;
-    font-size: 14px;
+.banner__time {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.banner__rating{
-    font-weight: 300;
-    font-size: 12px;
-}
-
-.banner__time-icon{
-    width: 20px;
-    filter: invert(1);
+.banner__time-count {
+	margin: 0;
 }
 
-.banner__information{
-    display: flex;
-    flex-direction: column;
-    align-items:start
+.banner__player {
+	font-weight: 600;
+	font-size: 14px;
+}
+.banner__rating {
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.banner__time-icon {
+	width: 20px;
+	filter: invert(1);
+}
+
+.banner__information {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
 }
