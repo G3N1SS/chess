@@ -8,7 +8,7 @@ import './Header.css'
 export default function Header() {
 	return (
 		<header className='header'>
-			<div className='container'>
+			<div className='container container_header'>
 				<div className='header__wrapper-left'>
 					<img src={logo} alt='' className='header__logo' />
 					<h1 className='header__title'>Pig chess</h1>

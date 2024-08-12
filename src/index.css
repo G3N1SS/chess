@@ -8,6 +8,11 @@
 	justify-content: center;
 }
 
+.container_header{
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 .page{
     background-color: rgb(31, 31, 31);
     height: 100vh;
