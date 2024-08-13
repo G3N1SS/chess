@@ -8,6 +8,7 @@ button:hover {
 	color: white;
 	font-size: 18px;
 	font-family: 'Inter';
+	padding: 5px 0px;
 }
 
 .header__wrapper-left {
@@ -19,7 +20,6 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 150px;
 }
 .account__btn {
 	display: flex;
@@ -59,8 +59,7 @@ button:hover {
 }
 
 .header__logo {
-	width: 150px;
-	height: 150px;
+	width: 100px;
 }
 .header__logo-settings {
 	width: 25px;
@@ -77,6 +76,7 @@ button:hover {
 }
 .header__title {
 	margin-right: 10px;
+	font-size: 32px;
 }
 .header__title a {
 	color: white;

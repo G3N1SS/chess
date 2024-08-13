@@ -1,0 +1,62 @@
+.menu-wrapper {
+	color: white;
+	background: #1c1c1c;
+	width: 320px;
+	border-radius: 20px;
+	font-family: 'Inter';
+	font-size: 20px;
+}
+.menu-wrapper__counter-block {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu-wrapper__counter-number {
+	width: 60px;
+	height: 35px;
+	background: #0f0f0f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-wrapper__counter-white {
+	width: 110px;
+	height: 30px;
+	padding-top: 5px;
+	padding-left: 20px;
+	transition: 0.3s all ease-in-out;
+}
+.menu-wrapper__counter-white:hover {
+	background: #3eb489;
+}
+.menu-wrapper__counter-black {
+	width: 110px;
+	height: 30px;
+	padding-top: 5px;
+	padding-left: 20px;
+	transition: 0.3s all ease-in-out;
+}
+.menu-wrapper__counter-black:hover {
+	background: #3eb489;
+}
+
+.menu-wrapper__player {
+	margin: 20px;
+}
+
+.menu-wrapper__app-surender {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-wrapper__app-surender__btn {
+	border: none;
+	background: #1c1c1c;
+	padding: 10px 30px;
+}
+
+.menu-wrapper__app-surender__btn img {
+	width: 35px;
+}
