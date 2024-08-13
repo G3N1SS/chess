@@ -1,7 +1,6 @@
 .pawn {
 	background: url('../../img/Chess_plt60.png') center center/contain no-repeat;
 	cursor: pointer;
-	position: relative;
 	transition: all .5s;
 }
 .pawn_black {
