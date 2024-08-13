@@ -1,20 +1,22 @@
 @font-face {
-    font-family: 'Inter';
-    font-weight: 900;
-    src: local('Inter'),
-         url(./fonts/static/Inter-Black.ttf);
+	font-family: 'Inter';
+	font-weight: 900;
+	src: local('Inter'), url(./fonts/static/Inter-Black.ttf);
 }
 
-@font-face{
-    font-family: 'Inter';
-    font-weight: 500;
-    src: local('Inter'),
-         url(./fonts/static/Inter-Medium.ttf);
+@font-face {
+	font-family: 'Inter';
+	font-weight: 500;
+	src: local('Inter'), url(./fonts/static/Inter-Medium.ttf);
 }
 
-@font-face{
-    font-family: 'Inter';
-    font-weight: 400;
-    src: local('Inter'),
-         url(./fonts/static/Inter-Regular.ttf);
+@font-face {
+	font-family: 'Inter';
+	font-weight: 400;
+	src: local('Inter'), url(./fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'RobotoCondensed';
+	src: local('RobotoCondensed'), url('./fonts/static/RobotoCondensed.ttf');
 }

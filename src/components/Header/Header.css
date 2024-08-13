@@ -92,3 +92,7 @@ button:hover {
 	border: none;
 	font-size: 24px;
 }
+.account__btn-text {
+	color: white;
+	text-decoration: none;
+}

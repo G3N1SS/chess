@@ -1,0 +1,31 @@
+.profile__game-cart {
+	width: 1140px;
+	margin-bottom: 50px;
+}
+.profile__game-cart__up-block {
+	display: flex;
+	justify-content: space-around;
+	background: #111111;
+	padding: 0 20px;
+	text-align: center;
+}
+.profile__game-cart__up-block p {
+	width: 100px;
+}
+.profile__game-cart-main {
+	display: flex;
+	background: #1a1a1a;
+	padding: 12px 20px;
+	display: flex;
+	justify-content: space-around;
+}
+.profile__game-cart-main p {
+	width: 100px;
+	text-align: center;
+}
+#kostyl {
+	width: 125px;
+}
+.profile__game-block-img {
+	width: 126px;
+}

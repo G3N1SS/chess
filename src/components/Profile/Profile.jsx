@@ -1,42 +1,42 @@
 import { useState } from 'react'
+
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
+import ProfileCart from '../ProfileCart/ProfileCart'
 import './Profile.css'
 
 const Profile = () => {
-	const [userName, setUserName] = useState('user name')
-	const [userRating, setUserRating] = useState(0)
-	const [userCountry, setUserCountry] = useState('user Country')
-	const [dataRegister, setDataRegister] = useState('data Register')
+	const [userName, setUserName] = useState('DuckHacker')
+	const [dataRegister, setDataRegister] = useState('4 июня 1976 год')
 	const [userCounterGame, setUserCounterGame] = useState(0)
 	const [isOnline, setIsOnline] = useState(true)
-	const [gameResult, setGameResult] = useState('win lose')
 
 	return (
 		<>
 			<Header />
 			<main className='profile'>
-				<div className='container profile__container'>
+				<div className='profile__info-block'>
 					<div className='profile__info'>
+						<img
+							src='http://www.flag.kremlin.ru/static/img/svg/flag.svg?e6efb77a91'
+							alt=''
+							className='profile-country'
+						/>
 						<h3 className='profile-name'>{userName}</h3>
-						<p className='profile-country'>{userCountry}</p>
 						<p className='profile-data-register'>{dataRegister}</p>
 						<p className='profile-online'>{isOnline ? 'Online' : 'Ofline'}</p>
-						<div className='profile-games'>{`Количество игр: ${userCounterGame}`}</div>
-					</div>
-
-					<div className='profile-game'>
-						<h3 className='profile-game__title'>{`Ваши последнии игры ${userCounterGame}`}</h3>
-						<div className='profile-game-block'>
-							<img src='' alt='#' className='profile-game-block' />
-							<p className='profile-game-block__name'>Время игры</p>
-							<p className='profile-game-block__vs'>User1 VS User2</p>
-							<p className='profile-game-block__rating '>
-								{userRating} {userRating}
-							</p>
-							<p className='profile-game-block__result'>{gameResult}</p>
+						<div className='profile-games'>
+							{`Количество игр: ${userCounterGame}`}
 						</div>
 					</div>
+				</div>
+
+				<div className='profile__game-block'>
+					<div className='profile-line'></div>
+					<h3 className='profile__game__title'>{`История ваших игр ${userCounterGame}`}</h3>
+					<ProfileCart />
+					<ProfileCart />
+					<ProfileCart />
 				</div>
 			</main>
 			<Footer />

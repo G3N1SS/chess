@@ -1,5 +1,4 @@
 .knight {
-	position: absolute;
 	background: url('../../img/Chess_nlt60.png') center center/contain no-repeat;
 }
 .knight_black {
