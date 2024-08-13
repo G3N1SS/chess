@@ -10,7 +10,7 @@ const Profile = () => {
 	const [dataRegister, setDataRegister] = useState('data Register')
 	const [userCounterGame, setUserCounterGame] = useState(0)
 	const [isOnline, setIsOnline] = useState(true)
-	const [gameResult, setGameResult] = useState('win white')
+	const [gameResult, setGameResult] = useState('win lose')
 
 	return (
 		<>
