@@ -1,66 +1,88 @@
-import Bishop from '../Bishop/Bishop'
-import ChessMenu from '../ChessMenu/ChessMenu'
-import Header from '../Header/Header'
-import King from '../King/king'
-import Knight from '../Knight/Knight'
-import Pawn from '../Pawn/Pawn'
-import Queen from '../Queen/Queen'
-import Rook from '../Rook/Rook'
-import './ChessBoard.css'
+import Knight from "../Knight/Knight";
+import Pawn from "../Pawn/Pawn";
+import Rook from "../Rook/Rook";
+import Bishop from "../Bishop/Bishop";
+import King from "../King/king";
+import Queen from "../Queen/Queen";
+import "./ChessBoard.css";
+import { useState } from "react";
 
 export default function ChessBoard() {
-	return (
-		<>
-			<Header />
-			<div className='wrapper-center container'>
-				<div className='wrapper'>
-					{/* 8 черных пешек */}
-					<Pawn black={'pawn_black'} position={'figure_a7'} />
-					<Pawn black={'pawn_black'} position={'figure_b7'} />
-					<Pawn black={'pawn_black'} position={'figure_c7'} />
-					<Pawn black={'pawn_black'} position={'figure_d7'} />
-					<Pawn black={'pawn_black'} position={'figure_e7'} />
-					<Pawn black={'pawn_black'} position={'figure_f7'} />
-					<Pawn black={'pawn_black'} position={'figure_g7'} />
-					<Pawn black={'pawn_black'} position={'figure_h7'} />
+  const [isSelected, setIsSelected] = useState(false);
+  function pieces(Element, line) {
+	let result = [];
+    const alphabet = "abcdefgh";
+    for (let i = 0; i < alphabet.length; i++) {
+	  result.push(<Element position={alphabet[i] + line} />);
+    }
+	return result
+  }
 
-					{/* 8 белых пешек */}
-					<Pawn position={'figure_a2'} />
-					<Pawn position={'figure_b2'} />
-					<Pawn position={'figure_c2'} />
-					<Pawn position={'figure_d2'} />
-					<Pawn position={'figure_e2'} />
-					<Pawn position={'figure_f2'} />
-					<Pawn position={'figure_g2'} />
-					<Pawn position={'figure_h2'} />
+  function select() {
+    if (isSelected) {
+      setIsSelected(false);
+    } else {
+      setIsSelected(true);
+    }
+  }
 
-					{/* Rook */}
-					<Rook black={'rook_black'} position={'figure_h8'} />
-					<Rook black={'rook_black'} position={'figure_a8'} />
-					<Rook />
-					<Rook position={'figure_h1'} />
+  return (
+    <div className="wrapper">
+      {/* 8 черных пешек */}
+      {(function () {
+        let result = [];
+        const alphabet = "abcdefgh";
+        for (let i = 0; i < alphabet.length; i++) {
+          result.push(
+            <Pawn
+              position={alphabet[i] + "7"}
+              key={alphabet[i] + "7"}
+              black={true}
+			  isSelected={isSelected}
+			  setIsSelected={setIsSelected}
+			  select={select}
+            />
+          );
+        }
+        return result;
+      })()}
 
-					{/* Knight */}
-					<Knight black={'knight_black'} position={'figure_b8'} />
-					<Knight black={'knight_black'} position={'figure_g8'} />
-					<Knight />
-					<Knight position={'figure_g1'} />
+      {/* 8 белых пешек */}
+      {(function () {
+        let result = [];
+        const alphabet = "abcdefgh";
+        for (let i = 0; i < alphabet.length; i++) {
+          result.push(
+            <Pawn position={alphabet[i] + "2"} key={alphabet[i] + "2"} />
+          );
+        }
+        return result;
+      })()}
 
-					{/* Bishop */}
-					<Bishop black={'bishop_black'} position={'figure_c8'} />
-					<Bishop black={'bishop_black'} position={'figure_f8'} />
-					<Bishop />
-					<Bishop position={'figure_f1'} />
+      {/* Rook */}
+      <Rook black={"rook_black"} position={"figure_h8"} />
+      <Rook black={"rook_black"} position={"figure_a8"} />
+      <Rook />
+      <Rook position={"figure_h1"} />
 
-					{/* Quenn and King */}
-					<King black={'king_black'} position={'figure_d8'} />
-					<King position={'figure_e1'} />
+      {/* Knight */}
+      <Knight black={"knight_black"} position={"figure_b8"} />
+      <Knight black={"knight_black"} position={"figure_g8"} />
+      <Knight />
+      <Knight position={"figure_g1"} />
 
-					<Queen black={'queen_black'} position={'figure_e8'} />
-					<Queen />
-				</div>
-				<ChessMenu />
-			</div>
-		</>
-	)
+      {/* Bishop */}
+      <Bishop black={"bishop_black"} position={"figure_c8"} />
+      <Bishop black={"bishop_black"} position={"figure_f8"} />
+      <Bishop />
+      <Bishop position={"figure_f1"} />
+
+      {/* Quenn and King */}
+      <King black={"king_black"} position={"figure_d8"} />
+      <King position={"figure_e1"} />
+
+      <Queen black={"queen_black"} position={"figure_e8"} />
+      <Queen />
+    </div>
+  );
 }
