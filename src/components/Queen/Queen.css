@@ -1,4 +1,5 @@
 .queen {
+	position: absolute;
 	background: url('../../img/Chess_qlt60.png') center center/contain no-repeat;
 }
 .queen_black {

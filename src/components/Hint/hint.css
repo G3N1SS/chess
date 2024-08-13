@@ -1,0 +1,266 @@
+.hint {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.hint_visible {
+    display: block;
+}
+/* a */
+.hint_a1 {
+  grid-area: a1;
+}
+
+.hint_a2 {
+  grid-area: a2;
+}
+
+.hint_a3 {
+  grid-area: a3;
+}
+
+.hint_a4 {
+  grid-area: d4;
+}
+
+.hint_a5 {
+  grid-area: a5;
+}
+
+.hint_a6 {
+  grid-area: a6;
+}
+
+.hint_a7 {
+  grid-area: a7;
+}
+
+.hint_a8 {
+  grid-area: a8;
+}
+/* b */
+.hint_b1 {
+  grid-area: b1;
+}
+
+.hint_b2 {
+  grid-area: b2;
+}
+
+.hint_b3 {
+  grid-area: b3;
+}
+
+.hint_b4 {
+  grid-area: b4;
+}
+
+.hint_b5 {
+  grid-area: b5;
+}
+
+.hint_b6 {
+  grid-area: b6;
+}
+
+.hint_b7 {
+  grid-area: b7;
+}
+
+.hint_b8 {
+  grid-area: b8;
+}
+/*c*/
+.hint_c1 {
+  grid-area: c1;
+}
+
+.hint_c2 {
+  grid-area: c2;
+}
+
+.hint_c3 {
+  grid-area: c3;
+}
+
+.hint_c4 {
+  grid-area: c4;
+}
+
+.hint_c5 {
+  grid-area: c5;
+}
+
+.hint_c6 {
+  grid-area: c6;
+}
+
+.hint_c7 {
+  grid-area: c7;
+}
+
+.hint_c8 {
+  grid-area: c8;
+}
+/* d */
+.hint_d1 {
+  grid-area: d1;
+}
+
+.hint_d2 {
+  grid-area: d2;
+}
+
+.hint_d3 {
+  grid-area: d3;
+}
+
+.hint_d4 {
+  grid-area: d4;
+}
+
+.hint_d5 {
+  grid-area: d5;
+}
+
+.hint_d6 {
+  grid-area: d6;
+}
+
+.hint_d7 {
+  grid-area: d7;
+}
+
+.hint_d8 {
+  grid-area: d8;
+}
+/* e */
+.hint_e1 {
+  grid-area: e1;
+}
+
+.hint_e2 {
+  grid-area: e2;
+}
+
+.hint_e3 {
+  grid-area: e3;
+}
+
+.hint_e4 {
+  grid-area: e4;
+}
+
+.hint_e5 {
+  grid-area: e5;
+}
+
+.hint_e6 {
+  grid-area: e6;
+}
+
+.hint_e7 {
+  grid-area: e7;
+}
+
+.hint_e8 {
+  grid-area: e8;
+}
+/* f */
+.hint_f1 {
+  grid-area: f1;
+}
+
+.hint_f2 {
+  grid-area: f2;
+}
+
+.hint_f3 {
+  grid-area: f3;
+}
+
+.hint_f4 {
+  grid-area: f4;
+}
+
+.hint_f5 {
+  grid-area: f5;
+}
+
+.hint_f6 {
+  grid-area: f6;
+}
+
+.hint_f7 {
+  grid-area: f7;
+}
+
+.hint_f8 {
+  grid-area: f8;
+}
+/* g */
+.hint_g1 {
+  grid-area: g1;
+}
+
+.hint_g2 {
+  grid-area: g2;
+}
+
+.hint_g3 {
+  grid-area: g3;
+}
+
+.hint_g4 {
+  grid-area: g4;
+}
+
+.hint_g5 {
+  grid-area: g5;
+}
+
+.hint_g6 {
+  grid-area: g6;
+}
+
+.hint_g7 {
+  grid-area: g7;
+}
+
+.hint_g8 {
+  grid-area: g8;
+}
+/* h */
+.hint_h1 {
+  grid-area: h1;
+}
+
+.hint_h2 {
+  grid-area: h2;
+}
+
+.hint_h3 {
+  grid-area: h3;
+}
+
+.hint_h4 {
+  grid-area: h4;
+}
+
+.hint_h5 {
+  grid-area: h5;
+}
+
+.hint_h6 {
+  grid-area: h6;
+}
+
+.hint_h7 {
+  grid-area: h7;
+}
+
+.hint_h8 {
+  grid-area: h8;
+}
