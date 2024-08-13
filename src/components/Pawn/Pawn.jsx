@@ -1,11 +1,23 @@
 import PropTypes from "prop-types";
 import "./Pawn.css";
 import { useEffect, useState } from "react";
+import Hint from "../Hint/Hint";
 
-export default function Pawn({ black, position, isSelected, setIsSelected, select }) {
+export default function Pawn({ black, position, active, isActive}) {
   const [isFirstSelect, setIsFirstSelect] = useState(true);
+  const [isSelected, setIsSelected] = useState(false);
   const [square, setSquare] = useState(position);
-  console.log(square);
+
+  console.log(isSelected,isActive)
+
+  function select(e) {
+    if (isSelected) {
+      setIsSelected(false);
+      e.target.c
+    } else {
+      setIsSelected(true);
+    }
+  }
 
   function movePieceBlack(num) {
     if (isFirstSelect) {
@@ -17,11 +29,12 @@ export default function Pawn({ black, position, isSelected, setIsSelected, selec
   }
 
   return (
+    <>
     <div
       className={`figure pawn ${black && "pawn_black"} figure_${square}`}
-      onClick={(e) => e.currentTarget(select)}
+      onClick={() => {select(); active(); }}
     >
-      <div
+      {/* <div
         className={`${
           isSelected && isFirstSelect
             ? "pawn_selected_black-two"
@@ -29,15 +42,19 @@ export default function Pawn({ black, position, isSelected, setIsSelected, selec
         }`}
         onClick={() => {
           movePieceBlack(2);
+		      setIsSelected(false);
         }}
       ></div>
       <div
         className={`${isSelected && "pawn_selected_black-one"}`}
         onClick={() => {
           movePieceBlack(1);
+		      setIsSelected(false);
         }}
-      ></div>
+      ></div> */}
     </div>
+    <Hint/>
+    </>
   );
 }
 

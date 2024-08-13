@@ -16,4 +16,6 @@
 	grid-template-rows: repeat(8, 100px);
 	justify-items: center;
 	align-items: center;
+	transition: all .5s;
+	position: relative;
 }
