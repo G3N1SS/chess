@@ -1,5 +1,4 @@
 .bishop {
-  position: absolute;
   background: url("../../img/Chess_blt60.png") center center/contain no-repeat;
 }
 .bishop_black {
